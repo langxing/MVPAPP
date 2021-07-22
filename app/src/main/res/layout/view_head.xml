@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:gravity="center"
+            android:text="检测项目"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:background="@color/black"
+            android:gravity="center"
+            android:text="指标要求"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:background="@color/black"
+            android:gravity="center"
+            android:text="试验要求"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:layout_weight="1"
+            android:background="@color/black"
+            android:gravity="center"
+            android:text="检测结果"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:background="@color/black"
+            android:gravity="center"
+            android:text="结果判定"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:minHeight="100dp">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            tools:text="检测项目" />
+
+        <FrameLayout
+            android:id="@+id/flNorm"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:background="@color/black"
+            android:gravity="center"
+            android:text="指标要求"
+            android:textColor="#ffffff"
+            android:textSize="16sp">
+
+            <TextView
+                android:id="@+id/tvNorm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                tools:text="指标要求" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvClaim"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:background="@color/black"
+            android:gravity="center"
+            android:textColor="#0D82FF"
+            android:textSize="16sp"
+            tools:text="试验要求" />
+
+        <FrameLayout
+            android:id="@+id/flResult"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:layout_weight="1"
+            android:background="@color/black"
+            android:gravity="center"
+            android:text="检测结果"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:background="@color/black"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvResultJudgment"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="符合"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/cbNotApplicable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不适用"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/black">
+
+        <TextView
+            android:id="@+id/tvReset"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/shape_btn_reset"
+            android:gravity="center"
+            android:text="重置"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvSave"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/shape_btn_save"
+            android:gravity="center"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </FrameLayout>
+</merge>
